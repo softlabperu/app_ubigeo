@@ -16,5 +16,5 @@ Including another URLconf
 from django.conf.urls import url, include
 
 urlpatterns = [
-    url(r'^api/', include('app_ubigeo.urls', namespace='api')),
+    url(r'^app_ubigeo/', include('app_ubigeo.urls', namespace='api')),
 ]

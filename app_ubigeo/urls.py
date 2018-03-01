@@ -9,5 +9,5 @@ router.register(r'provincia', ProvinciaViewSet, base_name='provincia')
 router.register(r'distrito', DistritoViewSet, base_name='distrito')
 
 urlpatterns = [
-    url(r'^app_ubigeo/', include(router.urls)),
+    url(r'^api/', include(router.urls)),
 ]
