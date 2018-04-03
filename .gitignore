@@ -96,6 +96,7 @@ fabric.properties
 /.scannerwork/
 /celerybeat-schedule
 /venv/
-.idea
+/.idea/
 /build/
 /dist/
+/*egg-info/
