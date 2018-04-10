@@ -95,3 +95,8 @@ fabric.properties
 /test_outputs/behave/*.xml
 /.scannerwork/
 /celerybeat-schedule
+/venv/
+/.idea/
+/build/
+/dist/
+/*egg-info/
