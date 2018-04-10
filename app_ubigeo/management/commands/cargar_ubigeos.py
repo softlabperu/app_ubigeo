@@ -1,5 +1,4 @@
 import csv
-
 from django.core.management.base import BaseCommand
 
 from app_ubigeo.models import Departamento, Provincia, Distrito
@@ -26,17 +25,22 @@ class Command(BaseCommand):
         reader = csv.DictReader(file, INPUT_HEAD, delimiter=options["delimitador"])
         next(reader)
         for line in reader:
-            print('.', end='', flush=True)
+            print('.', end='', flush = True)
             for k, v in line.items():
                 line[k] = v.lower().strip()
             try:
                 depar = Departamento.objects.create(nombre=line['DEPARTAMENTO'])
             except:
+                print(line)
                 depar = Departamento.objects.get(nombre=line['DEPARTAMENTO'])
 
             try:
                 prov = Provincia.objects.create(nombre=line['PROVINCIA'], departamento_id=depar.id)
             except:
+                print(line)
                 prov = Provincia.objects.get(nombre=line['PROVINCIA'], departamento_id=depar.id)
 
-            Distrito.objects.create(nombre=line['DISTRITO'], ubigeo=line['UBIGEO'], provincia_id=prov.id)
+            try:
+                Distrito.objects.create(nombre=line['DISTRITO'], ubigeo=line['UBIGEO'], provincia_id=prov.id)
+            except:
+                print(line)
