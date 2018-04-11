@@ -34,16 +34,16 @@ class Command(BaseCommand):
             except IntegrityError:
                 depar = Departamento.objects.get(nombre=line['DEPARTAMENTO'])
             except Exception as e:
-                print(e)
-                print(line)
+                # print(e)
+                print("----" + line)
 
             try:
                 prov = Provincia.objects.create(nombre=line['PROVINCIA'], departamento_id=depar.id)
             except IntegrityError:
                 prov = Provincia.objects.get(nombre=line['PROVINCIA'], departamento_id=depar.id)
             except Exception as e:
-                print(e)
-                print(line)
+                # print(e)
+                print("----" + line)
 
             try:
                 Distrito.objects.create(nombre=line['DISTRITO'], ubigeo=line['UBIGEO'], provincia_id=prov.id)
