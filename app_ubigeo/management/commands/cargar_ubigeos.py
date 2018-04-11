@@ -1,5 +1,6 @@
 import csv
 from django.core.management.base import BaseCommand
+from django.db import IntegrityError
 
 from app_ubigeo.models import Departamento, Provincia, Distrito
 
@@ -30,15 +31,19 @@ class Command(BaseCommand):
                 line[k] = v.lower().strip()
             try:
                 depar = Departamento.objects.create(nombre=line['DEPARTAMENTO'])
-            except:
-                print(line)
+            except IntegrityError:
                 depar = Departamento.objects.get(nombre=line['DEPARTAMENTO'])
+            except Exception as e:
+                print(e)
+                print(line)
 
             try:
                 prov = Provincia.objects.create(nombre=line['PROVINCIA'], departamento_id=depar.id)
-            except:
-                print(line)
+            except IntegrityError:
                 prov = Provincia.objects.get(nombre=line['PROVINCIA'], departamento_id=depar.id)
+            except Exception as e:
+                print(e)
+                print(line)
 
             try:
                 Distrito.objects.create(nombre=line['DISTRITO'], ubigeo=line['UBIGEO'], provincia_id=prov.id)
