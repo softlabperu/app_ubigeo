@@ -21,7 +21,7 @@ class Command(BaseCommand):
         parser.add_argument('ruta_del_archivo', type=str)
 
     def handle(self, *args, **options):
-        file = open(options['ruta_del_archivo'], mode='r')
+        file = open(options['ruta_del_archivo'], mode='r', encoding="utf-8")
         INPUT_HEAD = ['UBIGEO', 'DISTRITO', 'PROVINCIA', 'DEPARTAMENTO']
         reader = csv.DictReader(file, INPUT_HEAD, delimiter=options["delimitador"])
         next(reader)

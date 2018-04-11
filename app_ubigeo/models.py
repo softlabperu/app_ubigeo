@@ -29,3 +29,7 @@ class Distrito(models.Model):
     nombre = models.CharField(blank=False, null=False, max_length=250)
     ubigeo = models.CharField(blank=False, null=False, max_length=10)
     provincia = models.ForeignKey(Provincia)
+
+
+class Test(models.Model):
+    nombre = models.TextField()
