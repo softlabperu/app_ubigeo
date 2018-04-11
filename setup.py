@@ -9,6 +9,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 version=os.environ.get('MODULE_VERSION')
+version='2.0'
 
 setuptools.setup(
     name='django-ubigeo',
