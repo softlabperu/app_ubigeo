@@ -33,17 +33,15 @@ class Command(BaseCommand):
                 depar = Departamento.objects.create(nombre=line['DEPARTAMENTO'])
             except IntegrityError:
                 depar = Departamento.objects.get(nombre=line['DEPARTAMENTO'])
-            except:
-                # print(e)
-                print("*-*-*-*-*-*-*" + line)
+            except Exception as e:
+                print(str(e) + 'in line: ' + line)
 
             try:
                 prov = Provincia.objects.create(nombre=line['PROVINCIA'], departamento_id=depar.id)
             except IntegrityError:
                 prov = Provincia.objects.get(nombre=line['PROVINCIA'], departamento_id=depar.id)
-            except:
-                # print(e)
-                print("*-*-*-*-*-*-*" + line)
+            except Exception as e:
+                print(str(e) + 'in line: ' + line)
 
             try:
                 Distrito.objects.create(nombre=line['DISTRITO'], ubigeo=line['UBIGEO'], provincia_id=prov.id)
