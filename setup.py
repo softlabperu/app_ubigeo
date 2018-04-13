@@ -16,7 +16,7 @@ setuptools.setup(
     version=version,
     packages=setuptools.find_packages(),
     include_package_data=True,
-    license='BSD License',  # example license
+    license='BSD License',
     description='A simple Django app to validate peru ubigeo',
     long_description=README,
     url='https://www.example.com/',
