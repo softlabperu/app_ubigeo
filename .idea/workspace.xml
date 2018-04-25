@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c3cdd07-77c1-41b9-af20-f19b526ff50b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ubigeo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ubigeo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
@@ -35,8 +34,11 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="315">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,6 +116,11 @@
           <expand>
             <path>
               <item name="app_ubigeo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_ubigeo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app_ubigeo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app_ubigeo" type="462c0819:PsiDirectoryNode" />
               <item name="app_ubigeo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -260,11 +267,19 @@
       <option name="project" value="LOCAL" />
       <updated>1523559474610</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Remove exmple license comment">
+      <created>1523580705083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523580705083</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50208336" side_tool="true" weight="0.32908705" />
@@ -272,8 +287,8 @@
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49791667" visible="true" weight="0.3286334" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23852721" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49791667" visible="true" weight="0.24403471" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2411953" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="1" visible="true" weight="0.13927428" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -302,9 +317,20 @@
     <MESSAGE value="- Ignorar virtualenv y archivos idea" />
     <MESSAGE value="- Ignorar distributables" />
     <MESSAGE value="Get version from environment variales" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get version from environment variales" />
+    <MESSAGE value="Remove exmple license comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove exmple license comment" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -352,13 +378,6 @@
     <entry file="file://$PROJECT_DIR$/app_ubigeo/migrations/0001_initial.py" />
     <entry file="file://$PROJECT_DIR$/app_ubigeo/migrations/0003_distrito_ubigeo.py" />
     <entry file="file://$PROJECT_DIR$/app_ubigeo/management/commands/cargar_ubigeo.py" />
-    <entry file="file://$PROJECT_DIR$/app_ubigeo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_ubigeo/api/validators.py" />
     <entry file="file://$PROJECT_DIR$/app_ubigeo/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -388,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="101" column="11" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/foobar-utils/index.html" />
     <entry file="file://$PROJECT_DIR$/dist/django-ubigeo/index.html" />
     <entry file="file://$PROJECT_DIR$/index_template.html" />
@@ -420,13 +432,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
+    <entry file="file://$PROJECT_DIR$/app_ubigeo/management/commands/cargar_ubigeos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="101" column="11" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_ubigeo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="315">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

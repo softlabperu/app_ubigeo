@@ -19,9 +19,9 @@ setuptools.setup(
     license='BSD License',
     description='A simple Django app to validate peru ubigeo',
     long_description=README,
-    url='https://www.example.com/',
-    author='Your Name',
-    author_email='yourname@example.com',
+    url='https://www.softlabperu.com/',
+    author='Jason lazolock',
+    author_email='jlazolock@softlabperu.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
